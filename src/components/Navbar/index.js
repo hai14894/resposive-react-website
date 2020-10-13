@@ -1,5 +1,14 @@
 import React from "react";
-import { Nav, NavContainer, NavLogo } from "./NavbarComponents";
+import {FaBars} from 'react-icons/fa'
+import {
+  Nav,
+  NavContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "./NavbarComponents";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const NavBar = () => {
@@ -7,7 +16,15 @@ const NavBar = () => {
     <Router>
       <Nav>
         <NavContainer>
-          <NavLogo>Hello</NavLogo>
+          <NavLogo to="/">Hello</NavLogo>
+          <MobileIcon>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about" About></NavLinks>
+            </NavItem>
+          </NavMenu>
         </NavContainer>
       </Nav>
     </Router>
