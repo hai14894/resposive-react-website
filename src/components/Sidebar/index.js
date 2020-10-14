@@ -10,11 +10,11 @@ import {
   SidebarMenu,
 } from "./SidebarComponents";
 
-const Sidebar = () => {
+const Sidebar = ({toggle, isOpen}) => {
   return (
       
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer toggle={toggle} isOpen={isOpen}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>

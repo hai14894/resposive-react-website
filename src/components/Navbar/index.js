@@ -9,18 +9,18 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarComponents";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({toggle}) => {
   return (
     <Router>
       <Nav>
         <NavContainer>
           <NavLogo to="/">Hello</NavLogo>
 
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
@@ -39,7 +39,7 @@ const NavBar = () => {
             </NavItem>
 
             <NavBtn>
-                <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">Sign In</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavContainer>
