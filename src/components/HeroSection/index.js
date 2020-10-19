@@ -31,7 +31,7 @@ const HeroSection = () => {
           minim veniam.
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+          <Button to="/signin" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
             Get Started {hover ? <Arrow /> : <ArrowHover />}{" "}
           </Button>
         </HeroBtnWrapper>
