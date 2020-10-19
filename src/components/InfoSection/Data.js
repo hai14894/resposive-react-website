@@ -35,8 +35,8 @@ export const objectTwo = {
 
 export const objectThree = {
   id: "signup",
-  lightBg: false,
-  lightText: true,
+  lightBg: true,
+  lightText: false,
   topline: " Sign UP",
   headline:
     "Join Us, It's easy",
@@ -46,8 +46,8 @@ export const objectThree = {
   imgStart: false,
   img: require("../../images/image3.svg"),
   alt: "Car",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 };
 
