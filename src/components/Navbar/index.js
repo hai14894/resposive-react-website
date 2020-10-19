@@ -11,11 +11,9 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarComponents";
-import { BrowserRouter as Router } from "react-router-dom";
-
 const NavBar = ({toggle}) => {
   return (
-    <Router>
+    
       <Nav>
         <NavContainer>
           <NavLogo to="/">Hello</NavLogo>
@@ -44,7 +42,7 @@ const NavBar = ({toggle}) => {
           </NavMenu>
         </NavContainer>
       </Nav>
-    </Router>
+   
   );
 };
 
