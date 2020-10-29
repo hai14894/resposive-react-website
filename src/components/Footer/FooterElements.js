@@ -72,17 +72,7 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
-export const SocialLogo = styled(Link)`
-  color: #fff;
-  justify-self: start;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  font-weight: bold;
-`;
+
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
