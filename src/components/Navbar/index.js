@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
@@ -27,6 +28,12 @@ const NavBar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+  const buttonVariants = {
+    hover: {
+      scale: 1.1,
+    },
+  };
+
   return (
     <>
       <IconContext.Provider value={{ color: "white" }}>
@@ -34,7 +41,9 @@ const NavBar = ({ toggle }) => {
           <NavContainer>
             <NavContainer>
               <NavLogo onClick={toggleHome} to="/">
-                Hello
+                <motion.span variants={buttonVariants} whileHover="hover">
+                  Home
+                </motion.span>
               </NavLogo>
 
               <MobileIcon onClick={toggle}>
@@ -50,7 +59,9 @@ const NavBar = ({ toggle }) => {
                     offset={-80}
                     to="about"
                   >
-                    About
+                    <motion.span variants={buttonVariants} whileHover="hover">
+                      About
+                    </motion.span>
                   </NavLinks>
                 </NavItem>
                 <NavItem>
@@ -61,7 +72,9 @@ const NavBar = ({ toggle }) => {
                     offset={-80}
                     to="discover"
                   >
-                    Discover
+                    <motion.span variants={buttonVariants} whileHover="hover">
+                      Discover
+                    </motion.span>
                   </NavLinks>
                 </NavItem>
                 <NavItem>
@@ -72,7 +85,9 @@ const NavBar = ({ toggle }) => {
                     offset={-80}
                     to="services"
                   >
-                    Services
+                    <motion.span variants={buttonVariants} whileHover="hover">
+                      Services
+                    </motion.span>
                   </NavLinks>
                 </NavItem>
                 <NavItem>
@@ -83,7 +98,9 @@ const NavBar = ({ toggle }) => {
                     offset={-80}
                     to="signup"
                   >
-                    Sign up
+                    <motion.span variants={buttonVariants} whileHover="hover">
+                      Sign Up
+                    </motion.span>
                   </NavLinks>
                 </NavItem>
 
