@@ -80,7 +80,7 @@ export const HeroP = styled(motion.p)`
   }
 `;
 
-export const HeroBtnWrapper = styled.div`
+export const HeroBtnWrapper = styled(motion.div)`
   margin-top: 32px;
   display: flex;
   flex-direction: column;

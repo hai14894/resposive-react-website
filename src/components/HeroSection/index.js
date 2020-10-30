@@ -18,6 +18,17 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover);
   };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.1,
+      textShadow: "0px 0px 8px rgb(125, 121, 121)",
+      boxShadow: "0px 0px 8px rgb(125, 121, 121)",
+      transition: {
+        yoyo: Infinity,
+      },
+    },
+  };
   return (
     <HeroContainer>
       <HeroBg>
@@ -40,7 +51,7 @@ const HeroSection = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </HeroP>
-        <HeroBtnWrapper>
+        <HeroBtnWrapper variants={buttonVariants} whileHover="hover">
           <Button
             to="/signin"
             onMouseEnter={onHover}
