@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
-
+import { motion } from "framer-motion";
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
@@ -52,7 +52,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-export const HeroH1 = styled.div`
+export const HeroH1 = styled(motion.div)`
   color: #fff;
   font-size: 48px;
   font-weight: bold;
@@ -65,7 +65,7 @@ export const HeroH1 = styled.div`
     font-size: 32px;
   }
 `;
-export const HeroP = styled.p`
+export const HeroP = styled(motion.p)`
   margin-top: 24px;
   color: #fff;
   font-size: 24px;
