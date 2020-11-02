@@ -4,3 +4,18 @@
   padding: 0;
   font-family: "Encode Sans Expanded", sans-serif;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background:#696969
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#1A9B9D,#C1BBD0);
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#1A9B9D,#01BF71);
+  box-shadow: 0 0 10px;
+  
+}
